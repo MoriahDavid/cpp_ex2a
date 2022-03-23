@@ -10,8 +10,8 @@
 #include "Notebook.hpp"
 using namespace ariel;
 
-// #include <string>
-// using namespace std;
+#include <string>
+using namespace std;
 
 TEST_CASE("good input"){
 
