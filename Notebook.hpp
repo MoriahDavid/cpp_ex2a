@@ -7,10 +7,10 @@ namespace ariel {
 	class Notebook{
         public:
             Notebook();
-            void write(unsigned int page, unsigned int row, unsigned int column, Direction d, string s);
-            string read(unsigned int page, unsigned int row, unsigned int column, Direction d, unsigned int n);
-            void erase(unsigned int page, unsigned int row, unsigned int column, Direction d, unsigned int n);
-            void show(unsigned int page_num);
+            void write(int page, int row, int column, Direction d, string s);
+            string read(int page, int row, int column, Direction d, int n);
+            void erase(int page, int row, int column, Direction d, int n);
+            void show(int page_num);
     };
 };
 

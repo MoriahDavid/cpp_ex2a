@@ -9,16 +9,16 @@ namespace ariel {
     Notebook::Notebook(){
 
     }
-    void Notebook::write(unsigned int page, unsigned int row, unsigned int column, Direction d, string s){
+    void Notebook::write(int page, int row, int column, Direction d, string s){
         return;
     }
-    string Notebook::read(unsigned int page, unsigned int row, unsigned int column, Direction d, unsigned int n){
+    string Notebook::read(int page, int row, int column, Direction d, int n){
         return "";
     }
-    void Notebook::erase(unsigned int page, unsigned int row, unsigned int column, Direction d, unsigned int n){
+    void Notebook::erase(int page, int row, int column, Direction d, int n){
         return;
     }
-    void Notebook::show(unsigned int page_num){
+    void Notebook::show(int page_num){
         return;
     }
 };
