@@ -31,6 +31,10 @@ TEST_CASE("good input"){
     nb.write(3, 0, 67, Direction::Horizontal, "_____");
     CHECK(nb.read(3, 0, 67, Direction::Horizontal, 5) == "_____");
 
+    CHECK_NOTHROW(nb.write(3, 0, 67, Direction::Vertical, string(101, '*')));
+    CHECK_NOTHROW(nb.read(3, 0, 67, Direction::Vertical, 102));
+    CHECK_NOTHROW(nb.erase(3, 0, 67, Direction::Vertical, 102));
+
     // Check erase and read
     nb.write(1, 0, 0, Direction::Horizontal, "pizza");
     nb.write(1, 1, 0, Direction::Horizontal, "crep");
